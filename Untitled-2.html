@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Beauty Salon</h1>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Pronto Eyelash Extension Clusters</h3>
+                <p>This is a cluster lash service. Natural lashes will be cleaned upon arrival. Fills are not available with clusters. You can get different variations ie, short, medium, long.</p>
+                <p class="price">$35.00 ・ 30 min</p>
+                <button onclick="addToSummary('Pronto Eyelash Extension Clusters', 35.00, 30)">Add to Appointment</button>
+            </div>
+            <div class="service">
+                <h3>Airbrush Brow Tint & Wax</h3>
+                <p>Tint lasts on hair 2 to 3 weeks.</p>
+                <p class="price">$45.00 ・ 30 min</p>
+                <button onclick="addToSummary('Airbrush Brow Tint & Wax', 45.00, 30)">Add to Appointment</button>
+            </div>
+            <!-- Add more services as needed -->
+        </div>
+        <div class="service">
+            <h3>Lip wax</h3>
+            <p></p>
+            <p class="price">$10.00 ・ 30 min</p>
+            <button onclick="addToSummary('Lip Wax', 10.00, 10)">Add to Appointment</button>
+        </div>
+        </section>
+        <section id="appointment-summary">
+            <h2>Appointment Summary</h2>
+            <div id="summary"></div>
+            <button id="next-button" onclick="nextStep()" disabled>Next</button>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
